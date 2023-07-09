@@ -96,7 +96,7 @@ function Restaurants(props) {
                 <Card style={{ margin: "0 10px" }}>
                   <CardImg
                     top={true}
-                    style={{ height: 200 }}
+                    style={{ height: 250 }}
                     src={`${process.env.STRAPI_URL || "http://localhost:1337"}${
                       res.attributes.image.data.attributes.url
                     }`}
