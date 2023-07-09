@@ -69,7 +69,7 @@ function RestaurantList(props) {
               }`}
             />
             <CardBody>
-              <CardTitle tag="h5">{res.attributes.name}</CardTitle>
+              <CardTitle tag="h4">{res.attributes.name}</CardTitle>
               <CardText>{res.attributes.description}</CardText>
             </CardBody>
             <div className="card-footer">
