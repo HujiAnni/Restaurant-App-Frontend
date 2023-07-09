@@ -78,11 +78,7 @@ function Dishes({ restId }) {
                 <CardText>{res.attributes.description}</CardText>
               </CardBody>
               <div className="card-footer">
-                <Button
-                  color="secondary"
-                  outline
-                  onClick={() => appContext.addItem(res)}
-                >
+                <Button color="secondary" outline onClick={() => addItem(res)}>
                   + Add To Cart
                 </Button>
               </div>
