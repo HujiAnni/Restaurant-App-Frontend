@@ -18,9 +18,7 @@ import {
 
 function Dishes({ restId }) {
   const [restaurantId, setRestaurantId] = useState();
-  const {
-    appContext: { addItem },
-  } = useContext(AppContext);
+  const { addItem } = useContext(AppContext);
 
   const GET_RESTAURANT_DISHES = gql`
     query ($restaurantId: ID!) {
@@ -69,7 +67,7 @@ function Dishes({ restId }) {
       <>
         {restaurant.data.attributes.dishes.data.map((res) => (
           <Col xs="6" sm="4" style={{ padding: 0 }} key={res.id}>
-            <Card style={{ margin: "0 10px" }}>
+            <Card style={{ margin: "2px 10px" }}>
               <CardImg
                 top={true}
                 style={{ height: 150, width: 150 }}
