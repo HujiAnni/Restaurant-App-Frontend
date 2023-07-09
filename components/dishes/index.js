@@ -18,7 +18,9 @@ import {
 
 function Dishes({ restId }) {
   const [restaurantId, setRestaurantId] = useState();
-  const { addItem } = useContext(AppContext);
+  const {
+    appContext: { addItem },
+  } = useContext(AppContext);
 
   const GET_RESTAURANT_DISHES = gql`
     query ($restaurantId: ID!) {
