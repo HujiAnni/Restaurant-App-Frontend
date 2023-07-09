@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "18.16.1",
+    "npm": "9.8.0"
+  },
   "dependencies": {
     "@apollo/client": "^3.7.16",
     "@stripe/react-stripe-js": "^2.1.1",
