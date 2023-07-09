@@ -74,7 +74,7 @@ function Dishes({ restId }) {
                 src={`http://localhost:1337${res.attributes.image.data.attributes.url}`}
               />
               <CardBody>
-                <CardTitle>{res.attributes.name}</CardTitle>
+                <CardTitle tag="h4">{res.attributes.name}</CardTitle>
                 <CardText>{res.attributes.description}</CardText>
               </CardBody>
               <div className="card-footer">
