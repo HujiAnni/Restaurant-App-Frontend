@@ -110,7 +110,7 @@ function Restaurants(props) {
                     <CardBody>
                       <CardTitle tag="h5">{res.attributes.name}</CardTitle>
                       <CardText>{res.attributes.description}</CardText>
-                      <CardText>{res.attributes.price}</CardText>
+                      <CardText>`Price: ${res.attributes.price}`</CardText>
                     </CardBody>
                     <div className="card-footer">
                       <Button
