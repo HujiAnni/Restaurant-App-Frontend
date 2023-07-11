@@ -61,7 +61,8 @@ function Dishes({ restId }) {
   if (!data) return <p>Not found</p>;
 
   let restaurant = data.restaurant;
-
+  console.log(res);
+  console.log(res.id);
   if (restId > 0) {
     return (
       <>
@@ -81,7 +82,7 @@ function Dishes({ restId }) {
                 <Button
                   color="secondary"
                   outline
-                  onClick={() => addItem(res.id)}
+                  onClick={() => addItem({ res })}
                 >
                   + Add To Cart
                 </Button>
