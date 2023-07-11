@@ -61,13 +61,13 @@ function Dishes({ restId }) {
   if (!data) return <p>Not found</p>;
 
   let restaurant = data.restaurant;
-  console.log(res);
-  console.log(res.id);
+  // console.log(res);
+  // console.log(res.id);
   if (restId > 0) {
     return (
       <>
         {restaurant.data.attributes.dishes.data.map((res) => (
-          <Col xs="6" sm="4" style={{ padding: 0 }} key={res.id}>
+          <Col xs="6" sm="4" style={{ padding: 0 }} key={{ res }.id}>
             <Card style={{ margin: "2px 10px" }}>
               <CardImg
                 top={true}
