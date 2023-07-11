@@ -64,7 +64,9 @@ function Restaurants(props) {
   if (data.restaurant.data.attributes.dishes.data.length) {
     const { restaurant } = data;
     // console.log(restaurant.data.attributes.dishes.data);
-
+    const searchQuery = restaurant.data.attributes.dishes.data.filter((obj) =>
+      obj.attributes.name.toLowerCase().includes(query)
+    );
     return (
       <>
         <h1>{restaurant.data.attributes.name}</h1>
@@ -87,7 +89,7 @@ function Restaurants(props) {
 
         <br></br>
         <Row>
-          {restaurant.data.attributes.dishes.data.map((res) => {
+          {searchQuery.map((res) => {
             let ress = { res };
             // console.log(ress);
 
