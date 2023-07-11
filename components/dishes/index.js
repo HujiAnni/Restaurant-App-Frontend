@@ -82,7 +82,7 @@ function Dishes({ restId }) {
                 <Button
                   color="secondary"
                   outline
-                  onClick={() => addItem({ res })}
+                  onClick={() => addItem(res.id)}
                 >
                   + Add To Cart
                 </Button>
