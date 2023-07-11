@@ -77,7 +77,7 @@ function Dishes({ restId }) {
               <CardBody>
                 <CardTitle tag="h5">{res.attributes.name}</CardTitle>
                 <CardText>{res.attributes.description}</CardText>
-                <CardText>`Price: ${res.attributes.price}`</CardText>
+                <CardText>Price: ${res.attributes.price}</CardText>
               </CardBody>
               <div className="card-footer">
                 <Button
