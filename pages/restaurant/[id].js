@@ -27,6 +27,7 @@ const GET_RESTAURANT_DISHES = gql`
         id
         attributes {
           name
+          city
           dishes {
             data {
               id
@@ -71,7 +72,7 @@ function Restaurants(props) {
       return (
         <>
           <h2>{restaurant.data.attributes.name}</h2>
-
+          <h5>{restaurant.data.attributes.city}</h5>
           <br></br>
           {/* <Dishes search={query} /> */}
           <div className="search">
