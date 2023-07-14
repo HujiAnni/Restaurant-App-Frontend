@@ -16,6 +16,7 @@ import {
   Row,
   Col,
   Container,
+  CardFooter,
 } from "reactstrap";
 
 const QUERY = gql`
@@ -26,6 +27,7 @@ const QUERY = gql`
         attributes {
           name
           description
+          city
           image {
             data {
               attributes {
@@ -72,6 +74,7 @@ function RestaurantList(props) {
               <CardTitle tag="h4">{res.attributes.name}</CardTitle>
               <CardText>{res.attributes.description}</CardText>
             </CardBody>
+            <CardFooter>{res.attributes.city}</CardFooter>
             <div className="card-footer">
               <Link href={`/restaurant/${res.id}`} legacyBehavior>
                 <a className="btn btn-dark">{res.attributes.name}</a>

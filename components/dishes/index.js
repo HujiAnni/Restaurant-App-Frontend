@@ -27,6 +27,7 @@ function Dishes({ restId }) {
           id
           attributes {
             name
+            city
             dishes {
               data {
                 id
