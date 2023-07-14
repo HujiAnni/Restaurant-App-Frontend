@@ -104,7 +104,7 @@ function Login(props) {
                     >
                       {loading ? "Loading... " : "Submit"}
                     </Button>
-                    <Button
+                    {/* <Button
                       style={{
                         float: "right",
                         width: 120,
@@ -125,7 +125,7 @@ function Login(props) {
                       }}
                     >
                       {loading ? "Loading... " : "Google Login"}
-                    </Button>
+                    </Button> */}
                   </FormGroup>
                 </fieldset>
               </Form>
