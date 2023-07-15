@@ -42,7 +42,7 @@ function CheckoutForm() {
     try {
       const response = await fetch(
         // `${process.env.STRAPI_URL || "http://127.0.0.1:1337"}/api/orders`,
-        `http://127.0.0.1:1337/api/orders`,
+        `restaurant-app-backend-strapi-d2f56ca44dd9.herokuapp.com/api/orders`,
 
         {
           method: "POST",

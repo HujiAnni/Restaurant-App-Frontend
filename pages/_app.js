@@ -31,7 +31,10 @@ class MyApp extends App {
     if (token) {
       // authenticate the token on the server and place set user object
       fetch(
-        `${process.env.STRAPI_URL || `http://localhost:1337`}/api/users/me`,
+        `${
+          process.env.STRAPI_URL ||
+          `https://restaurant-app-backend-strapi-d2f56ca44dd9.herokuapp.com`
+        }/api/users/me`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -66,9 +66,10 @@ function RestaurantList(props) {
             <CardImg
               top={true}
               style={{ height: 300 }}
-              src={`${process.env.STRAPI_URL || "http://localhost:1337"}${
-                res?.attributes?.image?.data?.attributes?.url
-              }`}
+              src={`${
+                process.env.STRAPI_URL ||
+                "https://restaurant-app-backend-strapi-d2f56ca44dd9.herokuapp.com"
+              }${res?.attributes?.image?.data?.attributes?.url}`}
             />
             <CardBody>
               <CardTitle tag="h4">{res.attributes.name}</CardTitle>
