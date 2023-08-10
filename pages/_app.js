@@ -32,8 +32,7 @@ class MyApp extends App {
       // authenticate the token on the server and place set user object
       fetch(
         `${
-          process.env.STRAPI_URL ||
-          `https://restaurant-app-backend-strapi-d2f56ca44dd9.herokuapp.com`
+          process.env.STRAPI_URL || `https://rstrapi-backend-ck3p.onrender.com`
         }/api/users/me`,
         {
           headers: {
