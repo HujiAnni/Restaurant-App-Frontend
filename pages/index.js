@@ -11,6 +11,7 @@ import {
   HttpLink,
   InMemoryCache,
 } from "@apollo/client";
+import Head from "next/head";
 
 function Home() {
   const [query, updateQuery] = useState("");

@@ -24,13 +24,14 @@ const Register = () => {
         <Col sm="12" md={{ size: 5, offset: 3 }}>
           <div className="paper">
             <div className="header">
-              <img
+              {/* <img
                 src="https://www.shutterstock.com/image-vector/covid19-coronavirus-epidemic-delivery-service-260nw-1697742205.jpg"
                 style={{
                   width: "77%",
                   borderRadius: "5px",
                 }}
-              />
+              /> */}
+              <h2 className="text-white text-center ">Sign Up</h2>
             </div>
             <section className="wrapper">
               {Object.entries(error).length !== 0 &&
