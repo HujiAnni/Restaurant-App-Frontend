@@ -20,7 +20,7 @@ function Home() {
   return (
     <div className="container-fluid">
       <Row className="justify-content-md-center">
-        <Col xs={1} sm={1} md={2} lg={3} xl={3}>
+        <Col>
           <div className="search">
             <InputGroup>
               <div className="input-group-append">
@@ -36,7 +36,7 @@ function Home() {
               />
             </InputGroup>
           </div>
-          <RestaurantList search={query} />
+          <RestaurantList search={query} xs={1} sm={1} md={2} lg={3} xl={3} />
         </Col>
       </Row>
       <Cart> </Cart>
