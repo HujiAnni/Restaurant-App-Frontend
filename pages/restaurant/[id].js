@@ -99,7 +99,14 @@ function Restaurants(props) {
               // console.log(ress);
 
               return (
-                <Col xs="6" sm="4" style={{ padding: 0 }} key={Math.random()}>
+                <Col
+                  xs={12}
+                  sm={6}
+                  lg={4}
+                  xl={4}
+                  style={{ padding: 0 }}
+                  key={Math.random()}
+                >
                   <Card style={{ margin: "0 10px" }}>
                     <CardImg
                       top={true}
@@ -146,7 +153,7 @@ function Restaurants(props) {
                 </Col>
               );
             })}
-            <Col xs="3" style={{ padding: 0 }}>
+            <Col xs={12} sm={6} lg={4} xl={4} style={{ padding: 0 }}>
               <div>
                 <Cart />
               </div>
