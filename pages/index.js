@@ -17,8 +17,8 @@ function Home() {
   const [query, updateQuery] = useState("");
   return (
     <div className="container-fluid">
-      <Row>
-        <Col lg="4" md="6" xs="12">
+      <Row className="justify-content-md-center">
+        <Col>
           <div className="search">
             <InputGroup>
               <div className="input-group-append">
