@@ -1,7 +1,9 @@
 /* /pages/index.js */
 
 import React, { useState } from "react";
-import { Col, Input, InputGroup, InputGroupAddon, Row } from "reactstrap";
+import { Input, InputGroup, InputGroupAddon } from "reactstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import RestaurantList from "../components/RestaurantList";
 import Dishes from "@/components/dishes";
 import Cart from "../components/cart";
