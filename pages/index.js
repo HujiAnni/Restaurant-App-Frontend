@@ -44,7 +44,7 @@ function Home() {
         {`
           .search {
             margin: 20px;
-            width: 100%;
+            width: 75%;
           }
         `}
       </style>

@@ -68,11 +68,18 @@ function Dishes({ restId }) {
     return (
       <>
         {restaurant.data.attributes.dishes.data.map((res) => (
-          <Col xs="6" sm="4" style={{ padding: 0 }} key={{ res }.id}>
+          <Col
+            xs={12}
+            sm={6}
+            lg={4}
+            xl={4}
+            style={{ padding: 0 }}
+            key={{ res }.id}
+          >
             <Card style={{ margin: "2px 10px" }}>
               <CardImg
                 top={true}
-                style={{ height: 150, width: 150 }}
+                style={{ height: 75%, width: 75% }}
                 src={`${res.attributes.image.data.attributes.url}`}
               />
               <CardBody>
