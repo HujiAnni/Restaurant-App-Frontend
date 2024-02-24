@@ -36,7 +36,7 @@ function Home() {
               />
             </InputGroup>
           </div>
-          <RestaurantList search={query} xs={1} sm={1} md={2} lg={3} xl={3} />
+          <RestaurantList search={query} />
         </Col>
       </Row>
       <Cart> </Cart>
@@ -44,7 +44,7 @@ function Home() {
         {`
           .search {
             margin: 20px;
-            width: 500px;
+            width: 100%;
           }
         `}
       </style>
