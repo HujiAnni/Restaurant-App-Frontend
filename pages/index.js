@@ -1,9 +1,9 @@
 /* /pages/index.js */
 
 import React, { useState } from "react";
-import { Input, InputGroup, InputGroupAddon } from "reactstrap";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col, Input, InputGroup, InputGroupAddon } from "reactstrap";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import RestaurantList from "../components/RestaurantList";
 import Dishes from "@/components/dishes";
 import Cart from "../components/cart";
@@ -20,7 +20,7 @@ function Home() {
   return (
     <div className="container-fluid">
       <Row className="justify-content-md-center">
-        <Col xs={12} sm={12} md={6} lg={4} xl={4}>
+        <Col xs={1} sm={1} md={2} lg={3} xl={3}>
           <div className="search">
             <InputGroup>
               <div className="input-group-append">
