@@ -18,7 +18,7 @@ function Home() {
   return (
     <div className="container-fluid">
       <Row>
-        <Col>
+        <Col md="6" xs="12">
           <div className="search">
             <InputGroup>
               <div className="input-group-append">
